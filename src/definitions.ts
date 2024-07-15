@@ -1,3 +1,3 @@
 export interface CapacitorMockLocationDetectorPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  detectMockLocation(): Promise<{ isMockLocation: boolean, message: string }>;
 }

@@ -13,24 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
+* [`detectMockLocation()`](#detectmocklocation)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### detectMockLocation()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+detectMockLocation() => Promise<{ isMockLocation: boolean; message: string; }>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;{ isMockLocation: boolean; message: string; }&gt;</code>
 
 --------------------
 

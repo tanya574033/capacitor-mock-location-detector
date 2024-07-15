@@ -4,10 +4,12 @@ import type { CapacitorMockLocationDetectorPlugin } from './definitions';
 
 export class CapacitorMockLocationDetectorWeb
   extends WebPlugin
-  implements CapacitorMockLocationDetectorPlugin
-{
-  async echo(options: { value: string }): Promise<{ value: string }> {
-    console.log('ECHO', options);
-    return options;
+  implements CapacitorMockLocationDetectorPlugin {
+
+  async detectMockLocation(): Promise<{ isMockLocation: boolean; message: string }> {
+    return {
+      isMockLocation: false,
+      message: 'Does not support detecting mock locations on the web platform.'
+    };
   }
 }
