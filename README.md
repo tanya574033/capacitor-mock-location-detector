@@ -26,6 +26,20 @@ npx cap sync
 detectMockLocation() => Promise<{ isMockLocation: boolean; message: string; }>
 ```
 
+
+## Permissions
+
+iOS
+
+Add the following entries to your Info.plist file
+
+```
+<key>NSLocationAlwaysUsageDescription</key>
+<string>App needs access to location when in the background.</string>
+<key>NSLocationWhenInUseUsageDescription</key>
+<string>App requires access to location when open.</string>
+```
+
 **Returns:** <code>Promise&lt;{ isMockLocation: boolean; message: string; }&gt;</code>
 
 --------------------
