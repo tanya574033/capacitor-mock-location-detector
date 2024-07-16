@@ -1,6 +1,6 @@
 import { registerPlugin } from '@capacitor/core';
 
-import type { CapacitorMockLocationDetectorPlugin } from './definitions';
+import { CapacitorMockLocationDetectorPlugin } from './definitions';
 
 const CapacitorMockLocationDetector =
   registerPlugin<CapacitorMockLocationDetectorPlugin>(
