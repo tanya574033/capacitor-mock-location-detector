@@ -24,6 +24,7 @@ npx cap sync
 
 ```typescript
 detectMockLocation() => Promise<{ isMockLocation: boolean; message: string; }>
+
 ```
 
 
